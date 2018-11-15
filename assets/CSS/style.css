@@ -1,0 +1,22 @@
+body {
+    background-color: lightblue;
+    background-image: url(../Images/grass\ background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+.crystals {
+    height: 200px;
+    width: 200px;
+}
+div{
+    text-align: center;
+}

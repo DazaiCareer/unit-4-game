@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-
-   
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script></script>
+    <link rel="stylesheet" href= "./assets/CSS/style.css">
+    <title>simple crystal game</title>
 </head>
 <body>
 
         <div>
-                <h1>The Evolution Stones!</h1>
+                <h1>The Evolution Stones: <span id="number-to-guess"></span></h1>
             <!--Description on how to play your game-->
+            <div id="userScore"></div>
+
+            <div id="userWins"></div>
+            <div id="userLosses"></div>
+
+            <div id="crystals">
+                </div>
+
                 <p>You will be given a random number at the start of the game.</p>
                 <p>There are four Evolution stones below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
                 <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>    
                 <p>The value of each Evolution stones is hidden from you until you click on it.</p>   
                 <p>Each time when the game starts, the game will change the values of each crystal.</p>    
-            <!--Amount of number you set it too-->    
-                <p>50</p>
+               
+            <div>
+                <h1 id="yourSum">0</h1>
+                <h2>Your Total Sum</h2>
+            </div>
+            <div>
+                <h1 id="randomNumber"></h1>
+                <h2>Can You Match This</h2>
+            </div>
             
-            <!--Wins and Losses-->    
-                <p>Wins: 0</p>
-                <p>Losses: 0</p>
-            <!--Images of the Evolution Stones-->
-                <p></p>
-            
-                <p id=></p>
-              </div>
+            <div>
+                <img src="./assets/Images/Fire Stone Image.png" alt="" id="crystal1" class="crystals">
+                <img src="./assets/Images/Leaf Stone image.png" alt="" id="crystal2" class="crystals">
+                <img src="./assets/Images/Thunder Stone image.png" alt="" id="crystal3" class="crystals">
+                <img src="./assets/Images/Water Stone image.png" alt="" id="crystal4" class="crystals">
+            </div>
 
-    <script>
-        
-        </script>
+            <div>
+                <h1 id="losses">0</h1>
+                <h2>Losses</h2>
+            </div>
+            <div>
+                <h1 id="wins">0</h1>
+                <h2>Wins</h2>
+            </div>
+
+
+        <script src="./assets/JavaScript/game.js"></script>      
+     
 </body>
 </html>
